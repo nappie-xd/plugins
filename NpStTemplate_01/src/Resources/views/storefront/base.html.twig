@@ -1,0 +1,58 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header %}
+    {% block layout_header_top_bar %}
+        <div class="col-auto">
+            <div class="container-fluid" style="padding-top: 5px">
+                <div class="row" style="font-size: .750rem">
+                    <div class="col" id="lieferungstext">
+                        Versandkostenfreie Lieferung
+                    </div>
+                    <div class="col" style="display: flex; justify-content: flex-end">
+                        <a class="main-navigation-link" href="#" style="margin-right: 15px">Link 1</a>
+                        <a class="main-navigation-link" href="#" style="margin-right: 15px">Link 2</a>
+                        <a class="main-navigation-link" href="#" style="margin-right: 15px">Link 3</a>
+                        <a class="main-navigation-link" href="#" style="margin-right: 15px">Link 4</a>
+                        <a class="main-navigation-link" href="#" style="margin-right: 15px">Link 5</a>
+                        <a class="main-navigation-link" href="#" style="padding-right: 0px">Link 6</a>
+                    </div>
+                </div>
+                <hr style="margin-top: 5px; margin-bottom: 0px">
+            </div>
+            <div class="container-fluid" style="margin-top: 3rem; justify-content: space-evenly">
+                <div class="row">
+                    <div class="col">
+                        <nav class="nav main-navigation-menu" style="font-size: .900rem; justify-content: space-evenly">
+                            <a class="nav-link main-navigation-link" href="#" style="margin-right: 15px"> HOME </a>
+                            <a class="nav-link main-navigation-link" href="#" style="margin-right: 15px"> HERREN </a>
+                            <a class="nav-link main-navigation-link" href="#" style="margin-right: 15px"> DAMEN </a>
+                            <a class="nav-link main-navigation-link" href="#" style="padding-right: 0px"> KINDER </a>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-lg-auto header-logo-col" style="margin-left: 1rem; margin-right: 1rem">
+                        {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+                    </div>
+                    <div class="col">
+                        <nav class="nav main-navigation-menu" style="font-size: .900rem; justify-content: space-evenly">
+                            <a class="nav-link main-navigation-link" href="#" style="margin-right: 15px"> ANMELDEN </a>
+                            <a class="nav-link main-navigation-link" href="#" style="margin-right: 15px"> MEIN KONTO </a>
+                            <a class="nav-link main-navigation-link" href="#" style="padding-right: 0px"> WARENKORB 
+                                <span class="cart-total">
+                                    ({{ page.cart.price.positionPrice|currency }})
+                                </span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <hr style="margin-top: 3rem">
+            </div>
+        </div> 
+    {% endblock %}
+{% endblock %}
+
+{% block base_navigation %} 
+{% endblock %}
+
+{% block base_main %}
+    <img src="https://lieblingsbeispiel.com/wp-content/uploads/2020/03/adolescent-casual-cute-elegant-428338.jpg" alt="main_image">
+{% endblock %}

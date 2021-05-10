@@ -1,0 +1,29 @@
+$bordercolor: black;
+
+.btn.increase {
+    border-color: $bordercolor;
+    border-radius: 0px 50px 50px 0px !important; //I'm sorry, haven't found a better way to fix this yet *
+    border-left: transparent;
+    background-color: transparent; 
+    color: black; 
+}
+
+.btn.decrease {
+    border-color: $bordercolor;
+    border-radius: 50px 0px 0px 50px !important; //I'm sorry, haven't found a better way to fix this yet² * 
+    border-right: transparent;
+    background-color: transparent; 
+    color: black; 
+}
+
+.quantity {
+    border-left: black;
+    border-right: transparent;
+    border-top: solid black;
+    border-bottom: solid black;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    appearance: textfield //heard this is bad practice too
+}
+
+//*inline styling is worse?

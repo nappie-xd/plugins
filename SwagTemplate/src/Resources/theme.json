@@ -1,0 +1,69 @@
+{
+  "name": "SwagTemplate",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@SwagTemplate"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/swag-template.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "blocks": {
+      "settings": {
+        "label": {
+          "en-GB": "Color Settings",
+          "de-DE": "Farbeinstellungen"
+        }
+      }
+    },
+    "sections": {
+      "overridenVariables": {
+        "label": {
+          "en-GB": "Overriden variables",
+          "de-DE": "Überschriebene Variablen"
+        }
+      },
+      "newVariables": {
+        "label": {
+          "en-GB": "New variables",
+          "de-DE": "Neue Variablen"
+        }
+      }
+    },
+    "fields": {
+      "sw-color-brand-primary": {
+        "label": {
+          "en-GB": "Primary color",
+          "de-DE": "Hauptfarbe"
+        },
+        "type": "color",
+        "block": "settings",
+        "section": "overridenVariables",
+        "value": "#48AB18"
+      },
+      "cardColor": {
+        "label": {
+          "en-GB": "Card color",
+          "de-DE": "Kartenfarbe"
+        },
+        "type": "color",
+        "editable": true,
+        "block": "settings",
+        "section": "newVariables",
+        "value": "#EF8376"
+      }
+    }
+  }
+}
