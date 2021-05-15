@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "NpStTemplate_02\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "NpStTemplate_02\\NpStTemplate_02",
+    "label": {
+      "de-DE": "Theme NpStTemplate_02 plugin",
+      "en-GB": "Theme NpStTemplate_02 plugin"
+    }
+  }
+}
