@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "NpAdTemplate_02\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "NpAdTemplate_02\\NpAdTemplate_02",
+    "label": {
+      "de-DE": "Theme NpAdTemplate_02 plugin",
+      "en-GB": "Theme NpAdTemplate_02 plugin"
+    }
+  }
+}
