@@ -6,5 +6,8 @@
         <service id="NpAdTemplate_03\Core\Content\faq\faqDefinition">
             <tag name="shopware.entity.definition" entity="faq" />
         </service>
+        <service id="NpAdTemplate_03\Core\Content\Product\ProductExtension">
+            <tag name="shopware.entity.extension"/>
+        </service>
     </services>
 </container>
