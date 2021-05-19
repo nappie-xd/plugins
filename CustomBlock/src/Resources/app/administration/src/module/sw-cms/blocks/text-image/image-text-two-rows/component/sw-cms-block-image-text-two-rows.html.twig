@@ -1,0 +1,19 @@
+{% block sw_cms_block_image_text_two_rows %}
+    <div class="sw-cms-block-image-text-two-rows">
+        <div class="sw-cms-block-image-text-two-rows__left">
+            <slot name="left-image">
+            {% block sw_cms_block_image_text_two_rows_slot_left %}
+            {% endblock %}
+            </slot>
+        </div>
+        <div class="sw-cms-block-image-text-two-rows__right">
+            <slot name="top-right">
+                {% block sw_cms_block_image_text_two_rows_slot_topright %}
+                {% endblock %}
+            </slot>
+            <slot name="bottom-right">
+                {% block sw_cms_block_image_text_two_rows_slot_bottomright %}
+                {% endblock %}
+            </slot>
+        </div>
+{% endblock %}

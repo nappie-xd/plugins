@@ -1,0 +1,24 @@
+{% block employee_page_list %}
+    <sw-page class="employee-page-list">
+        {% block swag_bundle_list_smart_bar_actions %}
+        <template #smart-bar-actions>
+            <sw-button variant="primary" :routerLink="{ name: 'employee.page.create' }">
+                {{ $tc('employee-page.list.addButtonText') }}
+            </sw-button>
+        </template>
+        {% endblock %}
+
+        <template #content>
+            {% block employee_page_list_content %}
+            <sw-entity-listing
+                v-if="products"
+                :items="products"
+                :repository="repository"
+                :showSelection="false"
+                :columns="columns"
+                detailRoute="employee.page.detail">
+            </sw-entity-listing>
+        </template>
+
+    </sw-page>
+{% endblock %}

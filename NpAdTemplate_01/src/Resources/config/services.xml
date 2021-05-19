@@ -1,16 +1,22 @@
-<?xml version="1.0" ?>
-
+<?xml version="1.0" ?> 
 <container xmlns="http://symfony.com/schema/dic/services"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://symfony.com/schema/dic/services
-            http://symfony.com/schema/dic/services/services-1.0.xsd">
-    <services>
-        <service id="NpAdTemplate_01\Core\Api\SalesController" public="true">
-            <argument id="product.repository" type="service">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services 
+    http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-            <call method="setContainer">
-                <argument type="service" id="service_container"/>
-            </call>
-        </service>
-    </services>
-</container>
+    <services>
+
+        <!-- <service id="NpAdTemplate_01\Core\Api\SalesController" public="true"/>
+        <argument id="product.repository" type="service"/>
+
+        <call>
+            <argument type="service" id="service_container"/>
+        </call>
+
+        <service id="NpAdTemplate_01\Storefront\Subscriber\FooterSubscriber">
+            <argument id="Shopware\Core\System\SytemConfig\SystemConfigService" type="service"/>
+             <tag name="kernel.event_subscriber"/>
+        </service> -->
+
+    </services> 
+</container>  
