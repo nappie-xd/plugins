@@ -1,0 +1,14 @@
+{
+    "custom-module": {
+        "general": {
+            "mainMenuItemGeneral": "Custom-Module",
+            "descriptionTextModule": "Manage Custom-Module here."
+        },
+        "list": {
+            "addButtonText": "Add FAQ",
+            "columnName": "Name",
+            "columnQuestion": "Question",
+            "columnAnswer": "Answer"
+        }
+    }
+}

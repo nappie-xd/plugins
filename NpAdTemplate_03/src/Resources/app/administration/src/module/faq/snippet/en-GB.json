@@ -1,0 +1,14 @@
+{
+    "faq": {
+        "general": {
+            "mainMenuItemGeneral": "FAQs",
+            "descriptionTextModule": "Manage FAQs here."
+        },
+        "list": {
+            "addButtonText": "Add FAQ",
+            "columnName": "Name",
+            "columnQuestion": "Question",
+            "columnAnswer": "Answer"
+        }
+    }
+}

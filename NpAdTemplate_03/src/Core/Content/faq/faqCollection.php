@@ -5,18 +5,18 @@ namespace NpAdTemplate_03\Core\Content\faq;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
 
 /**
- * @method void               add(faqCollection $entity)
- * @method void               set(string $key, faqCollection $entity)
- * @method faqCollection[]    getIterator()
- * @method faqCollection[]    getElements()
- * @method faqCollection|null get(string $key)
- * @method faqCollection|null first()
- * @method faqCollection|null last()
+ * @method void               add(FaqCollection $entity)
+ * @method void               set(string $key, FaqCollection $entity)
+ * @method FaqCollection[]    getIterator()
+ * @method FaqCollection[]    getElements()
+ * @method FaqCollection|null get(string $key)
+ * @method FaqCollection|null first()
+ * @method FaqCollection|null last()
  */
-class faqCollection extends EntityCollection
+class FaqCollection extends EntityCollection
 {
     protected function getExpectedClass(): string
     {
-        return faqEntity::class;
+        return FaqEntity::class;
     }
 }

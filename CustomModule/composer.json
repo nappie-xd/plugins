@@ -1,0 +1,18 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CustomModule\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "CustomModule\\CustomModule",
+    "label": {
+      "de-DE": "Theme CustomModule plugin",
+      "en-GB": "Theme CustomModule plugin"
+    }
+  }
+}
